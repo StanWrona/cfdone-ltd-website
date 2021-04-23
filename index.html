@@ -3,14 +3,61 @@
   <head>
     <title id='cfdone-ltd-title'>
       CFDone Ltd
-    </title>  
+    </title>
+    <link href="table_style.css" type="text/css" rel="stylesheet"> 
   </head>
   <body>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./simulations.html">Simulations</a> <!--In development-->
-    </nav>
-    <img src="CFDone_banner_final.png" alt="CFDone_banner_final.png"/>
+    <header>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./simulations.html" target="_parent">Simulations</a> <!--In development-->
+      </nav>
+      <figure>
+        <img src="CFDone_banner_final.png" alt="CFDone_banner_final.png"/>
+        <figcaption>Official CFD banner</figcaption>
+      </figure>      
+      <section id='overlay'>
+        <form action="/practice.html" method="POST">
+          <img src="https://media.libris.to/jacket/18175114_computational-fluid-dynamics.jpg" alt="Book Logo" width = "183" height = "524" id="logo">
+          <h1>Choose your best CFD book</h1>
+            <p>Don't limit your imagination</p>
+            <label for="book_name">Type your best CFD book name</label>
+            <br><input type="text" name="book_name" value="book name"><br>
+            <label for="user-password">Type your password</label>
+            <br><input type="password" id="user-password" name="user-password" required type="number" min="1" max="4"><br>
+            <label for="years"> Years of experience in CFD: </label>
+            <br><input id="years" name="years" type="number" step="5"><br>
+            <label for="volume"> Volume Control</label>
+            <input id="volume" name="volume" type="range" min="0" max="100" step="1">
+            <p>Choose your favourite CFD topic:</p>
+            <label for="thermal">Thermal</label>
+            <input id="thermal" name="topic" type="checkbox" value="thermal">
+            <br>
+            <label for="combustion">Combustion</label>
+            <input id="combustion" name="topic" type="checkbox" value="combustion">
+            <br>
+            <label for="aerodynamic">Aerodynamic</label>
+            <input id="aerodynamic" name="topic" type="checkbox" value="aerodynamic">
+            <p>What is sum of 1 + 1?</p>
+            <input type="radio" id="two" name="answer" value="2">
+            <label for="two">2</label>
+            <br>
+            <input type="radio" id="eleven" name="answer" value="11">
+            <label for="eleven">11</label>
+            <br><label for="tool">What's your favourite CFD tool?</label><br>
+            <select id="tool" name="tool">
+              <option value="fluent">Fluent</option>
+              <option value="cfx">CFX</option>
+              <option value="starccm">StarCCM</option>
+              <option value="openfoam">OpenFoam</option>
+              <option value="other">Other</option>
+            </select>
+            <br><label for="blog">New Blog Post: </label>
+            <textarea id="blog" name="blog" rows="5" cols="30"></textarea><br>
+            <br><input type="submit" value="Send" minlength="5" maxlength="250" required><br>
+        </form>
+      </section>
+    </header>
     <h1>
       HOME
     </h1>
@@ -21,7 +68,7 @@
       <p id='paragraph-1'>
         <br><img src="https://upload.wikimedia.org/wikipedia/commons/5/55/X-43A_%28Hyper_-_X%29_Mach_7_computational_fluid_dynamic_%28CFD%29.jpg" alt='CFD.jpg' width = "483" height = "312"/><br>
         <strong>Computational fluid dynamics <em>(CFD)</em></strong> is a branch of fluid mechanics that uses numerical analysis and data structures to analyze and solve problems that involve fluid flows.<br><br>Computers are used to perform the calculations required to simulate the free-stream flow of the fluid, and the interaction of the fluid (liquids and gases) with surfaces defined by boundary conditions.<br><br>With high-speed supercomputers, better solutions can be achieved, and are often required to solve the largest and most complex problems.<br><br>Ongoing research yields software that improves the accuracy and speed of complex simulation scenarios such as transonic or turbulent flows.<br><br>Initial validation of such software is typically performed using experimental apparatus such as wind tunnels.<br><br>In addition, previously performed analytical or empirical analysis of a particular problem can be used for comparison.<br><br>A final validation is often performed using full-scale testing, such as flight tests.
-        <br><a href='https://en.wikipedia.org/wiki/Computational_fluid_dynamics'>Link to Wiki</a><br>
+        <br><a href='https://en.wikipedia.org/wiki/Computational_fluid_dynamics' target="_blank">Link to Wiki</a><br>
       </p>
       <p id='paragraph-2'>
         <span>CFD is applied to a wide range of research and engineering problems in many fields of study and industries, including aerodynamics and aerospace analysis, weather simulation, natural science and environmental engineering, industrial system design and analysis, biological engineering, fluid flows and heat transfer, and engine and combustion analysis.</span> The fundamental basis of almost all CFD problems is the Navier–Stokes equations, which define many single-phase (gas or liquid, but not both) fluid flows. These equations can be simplified by removing terms describing viscous actions to yield the Euler equations. Further simplification, by removing terms describing vorticity yields the full potential equations. Finally, for small perturbations in subsonic and supersonic flows (not transonic or hypersonic) these equations can be linearized to yield the linearized potential equations.
@@ -52,9 +99,40 @@
     </h1>
     <div id='media'>
       <br><iframe width=100% height="315" src="https://www.youtube.com/embed/2rCBEYu7ABE?autoplay=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-      <br><iframe width="560" height="315" src="https://www.youtube.com/embed/op61fQO2Fl8?autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-      <br><iframe width="560" height="315" src="https://www.youtube.com/embed/MMLgJlJX0Rk?autoplay=1&mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      <br><iframe width="560" height="315" src="https://www.youtube.com/embed/op61fQO2Fl8?autoplay=0&mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      <br><iframe width="560" height="315" src="https://www.youtube.com/embed/MMLgJlJX0Rk?autoplay=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
       <br><iframe width="560" height="315" src="https://www.youtube.com/embed/qaGzV3aY1-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
     </div>
+    <table border='1'>
+      <thead>
+        <tbody>
+          <tr>
+            <th scope="col">CFD Company</th>
+            <th scope="col">Revenue</th>
+            <th scope="col">Year of establishment</th>   
+          </tr>
+          <tr>
+            <td colspan="2">New row 1</td>
+            <td>New row 1</td>
+          </tr>
+          <tr>
+            <td rowspan="2">New row 2 and 3</td>
+            <td>New row 2</td>
+            <td>New row 2</td>
+          </tr>
+          <tr>
+            <td>New row 3</td>
+            <td>New row 3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td>Total</td>
+          <td>28</td>
+        </tfoot>
+      </thead>
+    </table>
+    <br><footer>
+      <p>Email me at swrona90@gmail.com</p>
+    </footer><br>
   </body>
 </html>
