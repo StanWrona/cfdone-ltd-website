@@ -1,0 +1,114 @@
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(11, 102, 41);
+  font-size: 4em;
+  padding-top: 100px;
+  width: 100%;
+  background-color: blue;
+  background-image: url('https://www.example.com/image.jpg');
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: blue !important;
+  background-color: blue;
+  opacity: 0.5;
+}
+
+.cfdone-ltd-title {
+  font-weight: bold;
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+/* to delete */
+
+table {
+    height: 40%;
+    left: 10%;
+    margin: 20px auto;
+    overflow-y: scroll;
+    position: static;
+    width: 80%;
+  }
+  
+  thead th {
+    background: #88CCF1;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 5px;
+  }
+  
+  th, td {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+    text-align: left;
+    width: 33.3333%;
+  }
+
+  #overlay {
+    width: 80%;
+    margin: 3% auto;
+    height: 95vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 40px;
+  }
+
+  #logo {
+    height: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  body {
+    background-color: rgb(57, 169, 219);
+    font-family: Rubik, Arial;
+  }
+
+  #temp_conv {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(53, 8, 8) !important;
+    background-color: blue;
+  }
+
+  .share {
+    border: 1px solid LightGrey;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .share a {
+    background: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 24px;
+    text-decoration: none;
+  }
+  
+  .share a:hover {
+    background: rgb(15, 219, 219);
+    border: 10px solid red;
+    color: red;
+  }

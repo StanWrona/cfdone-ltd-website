@@ -4,18 +4,21 @@
     <title id='cfdone-ltd-title'>
       CFDone Ltd
     </title>
-    <link href="table_style.css" type="text/css" rel="stylesheet"> 
+    <link href="./resources/css/table_style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
+    <script type="text/javascript" src="./resources/js/temperature_conversion.js"></script>
     <header>
       <nav>
         <a href="./index.html">Home</a>
         <a href="./simulations.html" target="_parent">Simulations</a> <!--In development-->
       </nav>
       <figure>
-        <img src="CFDone_banner_final.png" alt="CFDone_banner_final.png"/>
-        <figcaption>Official CFD banner</figcaption>
-      </figure>      
+        <img src="./resources/CFDone_banner_final.png" alt="CFDone_banner_final.png"/>
+        <figcaption id='figcaption'>Official CFD banner</figcaption>
+      </figure>
+      <p id='temp_conv'>Temperature conversion</p>    
+
       <section id='overlay'>
         <form action="/practice.html" method="POST">
           <img src="https://media.libris.to/jacket/18175114_computational-fluid-dynamics.jpg" alt="Book Logo" width = "183" height = "524" id="logo">
@@ -131,6 +134,11 @@
         </tfoot>
       </thead>
     </table>
+    <div class='share'>
+      <a href="#">SHARE</a>
+      <a href="#">FAVORITE</a>
+      <a href="#">READ</a>
+    </div>
     <br><footer>
       <p>Email me at swrona90@gmail.com</p>
     </footer><br>
